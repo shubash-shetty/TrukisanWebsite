@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <link rel = "icon" href = "images/WenIcon.png" type = "image/x-icon">
+    
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Rajdhani:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/*=======Nav starts======*/
+.header{
+    width: 100%;
+    height: 30vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.555),rgba(0, 0, 0, 0.571)),url(images/TruKisan-Landscaping-Services.jpg);
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    width:100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.logo{
+    width: 150px;
+    margin: 2px 0;
+    cursor: pointer;
+}
+nav ul{
+    
+    width: 100%;
+    margin-top: 35px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 2px 30px;
+    color: white;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+.text{
+    padding: 30px 40px;
+    font-size: 20px;
+}
+nav.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 8%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: padding 1s;
+}
+nav.sticky ul{
+    width: auto;
+}
+nav ul li a:hover{
+    color: rgba(218, 174, 63, 0.879);
+    transition: 0.4s;
+}
+
+
+/*=======Nav ends======*/
+
+/*=========Body Starts=======*/
+
+.Services-contact{
+    min-height: 20vh;
+}
+.h-header{
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px ;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight:900;
+    letter-spacing: 1px;
+    font-size: 50px;
+    color: black;
+}
+
+.h-header1{
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px ;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: black;
+}
+
+
+.Con-body{
+  min-height: 100vh;
+  background:  linear-gradient(rgba(0, 0, 0, 0.551),rgba(0, 0, 0, 0.551)),url(images/background.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+    font-family: "Poppins", sans-serif;
+  align-items: center;
+}
+
+.contact-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.loca{
+  color: white;
+  max-width: 700px;
+  letter-spacing: 1px;
+  padding-left: 190px;
+   padding-right: 12px;
+  font-size: 25px;
+}
+.emai{
+     color: white;
+  max-width: 700px;
+    padding-top: 32px;
+  letter-spacing: 1px;
+  padding-left: 190px;
+   
+  font-size: 25px;
+}
+.num{
+     color: white;
+  max-width: 700px;
+    padding-top: 32px;
+  letter-spacing: 1px;
+  padding-left: 190px;
+   
+  font-size: 25px;
+}
+.time{
+     color: white;
+  max-width: 700px;
+    padding-top: 32px;
+  letter-spacing: 1px;
+  padding-left: 190px;
+   
+  font-size: 25px;
+}
+
+.contact info i{
+  margin-right: 40px;
+  font-size: 25px;
+}
+
+.contact-form{
+  max-width: 700px;
+  margin-right: 50px;
+  position: static;
+  overflow: hidden;
+}
+
+.contact-info, .contact-form{
+  flex: 1;
+}
+
+.contact-form h2{
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.contact-form .text-box{
+  background: rgba(0, 0, 0, 0.549);
+  color: #fff;
+  border: none;
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  
+  margin-bottom: 20px;
+  opacity: 1;
+}
+
+.contact-form .text-box:first-child{
+  margin-right: 35px;
+}
+
+.contact-form textarea{
+  background: rgba(0, 0, 0, 0.549);
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 1;
+}
+
+.contact-form .send-btn{
+  float: right;
+  background: #2E94E3;
+  color: #fff;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+.contact-form .send-btn:hover{
+  background: #0582E3;
+}
+
+@media screen and (max-width: 950px){
+  .contact-section{
+    flex-direction: column;
+  }
+
+  .contact-info, .contact-form{
+    margin: 30px 50px;
+  }
+
+  .contact-form h2{
+    font-size: 30px;
+  }
+
+  .contact-form .text-box{
+    width: 100%;
+  }
+}
+
+/*css for alert messages*/
+
+.alert-success{
+  z-index: 1;
+  background: #D4EDDA;
+  font-size: 18px;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: fixed;
+  right: 0;
+  top: 10px;
+  border-left: 8px solid #3AD66E;
+  border-radius: 4px;
+}
+
+.alert-error{
+  z-index: 1;
+  background: #FFF3CD;
+  font-size: 18px;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: fixed;
+  right: 0;
+  top: 10px;
+  border-left: 8px solid #FFA502;
+  border-radius: 4px;
+}
+
+
+
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.31),rgba(0, 0, 0, 0.31)),url(images/female-gardener-holding-small-roses-pots-close-up.jpg);
+    background-size: cover;
+    min-height: 41vh;
+}
+
+
+.para2{
+
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    padding-top: 90px;
+    color: rgba(255, 255, 255, 0.845);
+}
+.para3{
+padding-left:80px;
+padding-right:80px;
+text-align: center;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 15px;
+font-weight: 200;
+color: rgba(255, 255, 255, 0.821);
+}
+
+#social{
+  padding: 10px;
+  background-color: rgba(0, 219, 0, 0.688);
+  border: none;
+  border-radius: 65px;
+  right: 10px;
+  bottom: 10px;
+  position: fixed;
+}
+#social:hover{
+  transition: 0.1s;
+  background-color: rgb(0, 219, 0);
+}
+
+
+/*=======Body ends======*/
+
+/*=========Footer Starts=======*/
+
+.footer{
+    min-height: 65vh;
+    
+    background-image: linear-gradient(rgba(65, 74, 111, 0.7),rgba(4,9,30,0.7)),url(images/photo-1533460004989-cef01064af7e.jpg);
+}
+
+.para{
+    padding-top: 8px;
+    letter-spacing: 0.3ex;
+    font-size: 14px;
+}
+.footer-head{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+.para-list{
+    text-align: left;
+    color: rgb(193, 193, 193);
+    font-size: 15px;
+    justify-content: left;
+    text-decoration: none;
+    cursor: pointer;
+}
+.para-list:hover{
+    color: white;
+    transition: 0.2s;
+}
+.footer-last{
+    display: flex;
+    padding-top: 20px;
+    
+}
+.footer-last-image{
+    padding-left: 30%;
+    
+}
+
+/*=========Footer Ends=======*/
+
+
+.scrBar {
+  background-color: #70c745;
+  border-radius: 0;
+  bottom: 0;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  position: fixed;
+  font-size: 24px;
+  height: 40px;
+  line-height: 40px;
+  left: 50px;
+  text-align: center;
+  width: 40px;
+  -webkit-transition-duration: 500ms;
+  opacity: 0;
+  transition-duration: 500ms; }
+  #scrBar:hover {
+    background-color: #303030; }
+
+
+.scrBar.active{
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#Preloader{
+  background: rgb(245, 245, 245) url(images/envato-leaf.gif) no-repeat center;
+  height: 100vh;
+  width: 100%;
+  background-size: 40%;
+  position: fixed;
+  z-index: 100;
+}
+
+.displayNone{
+  display: none;
+}  
+
+
+
+
+    
+</style>
+</head>
+<body>
+
+  <div id="Preloader">
+
+  </div>
+    
+
+    <div class="header">
+        <nav id="navbar">
+            <img src="images/Trukisan-logo-white.svg" alt="" class="logo">
+            <ul id="menu">
+                <li><a href="Shome.html">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="GsHome.html">Garden Store</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="Services-contact">
+    <h4 class="h-header">Contact Us</h4>
+    <h4 class="h-header1">We Love to Hear from You!</h4>
+    
+</section>
+<a href="https://web.whatsapp.com/"><button id="social">
+    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+      <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+    </svg>
+</button></a>
+   
+<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=No%20112,%202nd%20A%20Cross,%205th%20Block,%20Nagarbhavi%202nd%20Stage,%20Bangalore%20-%20560072&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"  marginheight="0" marginwidth="0"></iframe><a href="https://www.online-timer.net"></a><br><style>.mapouter{position:static; text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">how to add a google map to wordpress</a><style>.gmap_canvas {overflow:hidden; background-image: linear-gradient(rgba(0, 0, 0, 0.01),rgba(0, 0, 0, 0.01)),url(images/single-line-marker-stroke-isolated-wax-crayon-as-design-underline-element-over-white-background-84977208.jpg);background-repeat: no-repeat; height:500px;width:1040px;}</style></div></div>
+
+<section class="Con-body">
+    <div class="contact-section">
+      <div class="contact-info">
+        <div class="loca"><i class="fas fa-map-marker-alt"></i>         No 112, 2nd A Cross, 5th Block, Nagarbhavi 2nd Stage, Bangalore - 560072</div>
+        <div class="emai"><i class="fas fa-envelope" ></i>  support@email.com</div>
+        <div class="num"><i class="fas fa-phone"></i> +91 9019931669 <br>+91 7892252165</div>
+        <div class="time"><i class="fas fa-clock"></i>Mon - Fri 8:00 AM to 5:00 PM</div>
+      </div>
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form class="contact" action="" method="post">
+          <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+          <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+             <input type="number" name="email" class="text-box" placeholder="Your Phone Number" required>
+            
+            <select class="text-box" >
+            <option value="">Select Category</option>
+            <option value="Plants">Plants</option>
+            <option value="Seeds">Seeds</option>
+            <option value="Pots/Planters">Pots/Planters</option>
+            <option value="Pebbles">Pebbles</option>
+            <option value="Manures">Manures</option>
+            <option value="Grass&Trufs">Grass & Trufs</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Services">Services</option>
+            <option value="Other">Other</option>
+            </select>
+            <select class="text-box" >
+                <option value="">Purpose</option>
+                <option value="">General Inqury</option>
+                <option value="">Bulk Orders</option>
+                <option value="">Customer Support</option>
+                <option value="">Other</option>
+            </select>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <input type="submit" name="submit" class="send-btn" value="Send">
+        </form>
+      </div>
+    </div>
+          </section>
+  
+             <!-- ============= Srollbar Start ============== -->
+        <a href="#"><div class="scrBar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+          </svg>
+         </div></a>
+  
+         <!-- ============= Scrollbar Ends ============== -->
+    
+     <!-- ============= Footer Start ============== -->
+     <footer class="footer bg-dark text-white pt-5 pb-4">
+
+        <div class="container text-center text-md-left">
+      
+          <div class="row text-center text-md-left">
+      
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-5">
+              <img src="images/Untitled-1-01.svg" width="150px" height="50px">
+              <p class="para">TruKisan is a one-stop-shop for all your gardening, farming and landscaping needs.</p>
+              
+              
+            </div>
+      
+            <!-- Variable-->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="footer-head text-uppercase mb-4 font-weight-bold">Recent Post</h5>
+            
+                    <p>
+                        <a href="" class="para-list" style="text-decoration: none;"></a>
+                    </p>
+    
+                    <p>
+              <a href="" class="para-list" style="text-decoration: none;"></a>
+            </p>
+            <p>
+              <a href="" class="para-list" style="text-decoration: none;"></a>
+            </p>
+            <p>
+              <a href="" class="para-list" style="text-decoration: none;"></a>
+            </p>
+            
+      
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="footer-head text-uppercase mb-4 font-weight-bold">Company</h5>
+            
+                    <p>
+                        <a href="" class="para-list " style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                          </svg> Home</a>
+                    </p>
+    
+                    <p>
+              <a href="" class="para-list" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+              </svg> About Us</a>
+            </p>
+            <p>
+              <a href="Services.html" class="para-list" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+              </svg> Services</a>
+            </p>
+            <p>
+              <a href="GsHome.html" class="para-list" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+              </svg> Garden Store</a>
+            </p>
+            
+      
+            </div>
+      
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="footer-head text-uppercase mb-4 font-weight-bold">Useful links</h5>
+            <p>
+              <a href="" class="para-list" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-check" viewBox="0 0 16 16">
+                <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+                <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+              </svg> Privacy Policy</a>
+            </p>
+            <p>
+              <a href="" class="para-list" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-shaded" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 14.933a.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067v13.866zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+              </svg> Terms & Conditions</a>
+            </p>
+            <p>
+              <a href="" class="para-list" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diagram-3-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zm-6 8A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm6 0A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm6 0a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1z"/>
+              </svg> Sitemapy</a>
+            </p>
+            <p>
+              <a href="" class="para-list" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+                <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z"/>
+              </svg> Connect</a>
+            </p>
+            </div>
+      
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="footer-head text-uppercase mb-4 font-weight-bold" >Get In Touch</h5>
+                <p>
+                    <a href="" class="para-list" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-compass-fill" viewBox="0 0 16 16">
+                        <path d="M15.5 8.516a7.5 7.5 0 1 1-9.462-7.24A1 1 0 0 1 7 0h2a1 1 0 0 1 .962 1.276 7.503 7.503 0 0 1 5.538 7.24zm-3.61-3.905L6.94 7.439 4.11 12.39l4.95-2.828 2.828-4.95z"/>
+                      </svg> No 112, 2nd A Cross, 5th Block, Nagarbhavi 2nd Stage, Bangalore - 560072</a>
+                </p>
+                <p>
+                    <a href="" class="para-list" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                        <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                      </svg> Phone:<br>+91 7892252165</a>
+                </p>
+                <p>
+                    <a href="" class="para-list" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                      </svg> Email:<br>support@email.com</a>
+                </p>
+                
+              </div>
+            
+          </div>
+      
+          <hr class="mb-4">
+      
+          <div class="row align-items-center">
+      
+            <div class="footer-last col-md-7 col-lg-8">
+              <p>	TruKisan ©2021 Media with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill color-black" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+              </svg> by <strong>Team Name</strong>  </p>
+              <img src="https://trukisan.com/wp-content/themes/woodmart/images/payments.png" alt="payments" class="footer-last-image">
+              
+            </div>
+    
+            
+          </div>
+      
+        </div>
+        
+      </footer>
+      
+      <!-- ============= Footer End ============== -->
+    
+  
+   <!-- ============= Just for prelaoding ============== -->
+   <div class="displayNone">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JOVKgws2N5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JOVKgws2N5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JOVKgws2N5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JOVKgws2N5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+    <!-- ==================================== -->
+                       
+
+<script>
+
+    var navbar = document.getElementById("navbar");
+    var menu = document.getElementById("menu");
+
+    window.onscroll = function(){
+        if(window.pageYOffset >= menu.offsetTop){
+            navbar.classList.add("sticky");
+        }
+        else{
+            navbar.classList.remove("sticky");
+        }
+    }
+
+const toTop = document.querySelector(".scrBar");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 150) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
+})
+
+
+var loader = document.getElementById("Preloader");
+
+window.addEventListener("load" , function() {
+  loader.style.display = "none";
+})
+</script>
+
+</body>
+</html>
